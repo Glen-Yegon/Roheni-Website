@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Custom Pieces | ROHENI</title>
+  <meta
+    name="description"
+    content="Have an idea for a custom garment? Tell ROHENI about it, and let's explore what's possible."
+  >
+  <meta name="theme-color" content="#FEFEFE">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Modak&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/customs.css">
+  <script src="scripts/customs.js" defer></script>
+</head>
+
+<body>
+
+    
+    <!-- ROHENI — Vertical Scroll Progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div
+    class="scroll-progress__fill"
+    id="scroll-progress-fill"
+  ></div>
+</div>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <div class="nav-group nav-left">
+        <a href="index.html#collection" class="nav-link">Collections</a>
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+
+      <a href="index.html" class="brand" aria-label="ROHENI home">
+        <img
+          src="images/logos/Logo.png"
+          alt="ROHENI"
+          class="brand-logo"
+        >
+      </a>
+
+      <div class="nav-group nav-right">
+        <a href="index.html#bring-it-back" class="nav-link">
+          Bring It Back
+        </a>
+
+        <a
+          href="customs.html"
+          class="nav-link nav-link--current"
+          aria-current="page"
+        >
+          Custom Pieces
+        </a>
+
+        <a href="index.html#cart" class="cart-link" aria-label="Shopping cart">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 8h14l1 12H4L5 8Z"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9 9V6a3 3 0 0 1 6 0v3"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <!-- Full-screen mobile menu -->
+
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-menu__top">
+        <a href="index.html" class="mobile-menu__brand" aria-label="ROHENI home">
+          <img src="images/logos/Logo.png" alt="ROHENI">
+        </a>
+
+        <button
+          class="mobile-menu__close"
+          id="mobile-menu-close"
+          type="button"
+          aria-label="Close navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+        <a href="about.html" class="mobile-menu__link">
+          <span class="mobile-menu__number">01</span>
+          <span>About</span>
+          <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="index.html#shop" class="mobile-menu__link">
+          <span class="mobile-menu__number">02</span>
+          <span>Shop</span>
+          <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="index.html#collection" class="mobile-menu__link">
+          <span class="mobile-menu__number">03</span>
+          <span>Collection 001</span>
+          <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="customs.html" class="mobile-menu__link">
+          <span class="mobile-menu__number">04</span>
+          <span>Custom Pieces</span>
+          <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="index.html#contact" class="mobile-menu__link">
+          <span class="mobile-menu__number">05</span>
+          <span>Contact</span>
+          <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+      <div class="mobile-menu__footer">
+        <span>ROHENI</span>
+        <span>ROOTED IN NAIROBI</span>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         PAGE INTRODUCTION
+    ========================== -->
+
+    <section class="customs-intro" aria-labelledby="customs-title">
+
+      <div class="customs-intro__top">
+        <span class="eyebrow">ROHENI / CUSTOM PIECES</span>
+        <span class="eyebrow customs-intro__location">
+          ROOTED IN NAIROBI
+        </span>
+      </div>
+
+      <div class="customs-intro__content">
+        <p class="section-label">
+          MADE TO YOUR IDEA
+        </p>
+
+        <h1 id="customs-title">
+          Something<br>
+          in mind
+        </h1>
+
+        <p class="customs-intro__description">
+          Have an idea for a piece you'd love to wear?
+          Tell us about it. We'll explore what's possible together.
+        </p>
+
+        <a href="#custom-enquiry" class="intro-link">
+          <span>Tell us about your idea</span>
+
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M12 4v16M5 13l7 7 7-7"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="customs-intro__bottom">
+        <span>01 — YOUR IDEA</span>
+        <span>02 — OUR CONVERSATION</span>
+        <span>03 — WHAT'S POSSIBLE</span>
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ENQUIRY SECTION
+    ========================== -->
+
+    <section
+      class="custom-enquiry"
+      id="custom-enquiry"
+      aria-labelledby="enquiry-title"
+    >
+
+      <div class="custom-enquiry__intro">
+        <p class="section-label">LET'S START HERE</p>
+
+        <h2 id="enquiry-title">
+          Tell us what<br>
+          you're imagining.
+        </h2>
+
+        <p class="custom-enquiry__description">
+          A rough idea is enough to start. Share as much or as little
+          detail as you have, and we'll take it from there.
+        </p>
+
+        <div class="enquiry-note">
+          <span class="enquiry-note__mark" aria-hidden="true">i</span>
+          <p>
+            Sending an enquiry doesn't commit you to a purchase.
+            We'll discuss the details with you first.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="custom-enquiry__form-wrap">
+
+        <form
+          class="custom-form"
+          id="custom-form"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+          novalidate
+        >
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">01</span>
+            <h3>About you</h3>
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-field">
+              <label for="customer-name">
+                Your name <span>*</span>
+              </label>
+
+              <input
+                type="text"
+                id="customer-name"
+                name="name"
+                placeholder="Your full name"
+                autocomplete="name"
+                required
+              >
+
+              <small class="field-error" id="name-error"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="customer-email">
+                Email address <span>*</span>
+              </label>
+
+              <input
+                type="email"
+                id="customer-email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              >
+
+              <small class="field-error" id="email-error"></small>
+            </div>
+
+          </div>
+
+
+          <div class="form-divider"></div>
+
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">02</span>
+            <h3>Your piece</h3>
+          </div>
+
+          <div class="form-field">
+            <label for="garment-type">
+              What would you like made? <span>*</span>
+            </label>
+
+            <div class="select-wrap">
+              <select id="garment-type" name="garmentType" required>
+                <option value="" selected disabled>
+                  Choose a garment
+                </option>
+                <option value="Jacket">Jacket</option>
+                <option value="Shirt or top">Shirt or top</option>
+                <option value="Trousers">Trousers</option>
+                <option value="Set">Set</option>
+                <option value="Outerwear">Other outerwear</option>
+                <option value="Other">Something else</option>
+              </select>
+
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="m7 10 5 5 5-5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <small class="field-error" id="garment-error"></small>
+          </div>
+
+
+          <div class="form-field">
+            <label for="idea-description">
+              Tell us about your idea <span>*</span>
+            </label>
+
+            <textarea
+              id="idea-description"
+              name="description"
+              rows="5"
+              minlength="10"
+              placeholder="What are you imagining? Think about the shape, details, colours, materials, or anything else you'd like us to know."
+              required
+            ></textarea>
+
+            <div class="field-meta">
+              <small class="field-hint">
+                Don't worry if you don't have everything figured out.
+              </small>
+
+              <small class="character-count" id="character-count">
+                0 / 1200
+              </small>
+            </div>
+
+            <small class="field-error" id="description-error"></small>
+          </div>
+
+
+          <div class="form-field">
+            <label for="reference-images">
+              Reference images
+              <span class="optional-label">OPTIONAL</span>
+            </label>
+
+            <p class="field-hint field-hint--top">
+              Have a sketch, photo or reference? Add it here.
+            </p>
+
+            <label class="file-upload" for="reference-images">
+              <span class="file-upload__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              <span class="file-upload__copy">
+                <strong>Choose reference images</strong>
+                <small>JPG, PNG or WEBP · Up to 5 images, 5 MB each</small>
+              </span>
+
+              <span class="file-upload__browse">Browse</span>
+            </label>
+
+            <input
+              type="file"
+              id="reference-images"
+              name="references"
+              accept="image/jpeg,image/png,image/webp"
+              multiple
+              hidden
+            >
+
+            <div
+              class="file-list"
+              id="file-list"
+              aria-live="polite"
+            ></div>
+
+            <small class="field-error" id="files-error"></small>
+          </div>
+
+
+          <div class="form-divider"></div>
+
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">03</span>
+            <h3>A few more details</h3>
+            <span class="optional-label">OPTIONAL</span>
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-field">
+              <label for="budget">
+                Your budget
+              </label>
+
+              <div class="select-wrap">
+                <select id="budget" name="budget">
+                  <option value="" selected>Not sure yet</option>
+                  <option value="Under KSh 5,000">Under KSh 5,000</option>
+                  <option value="KSh 5,000–10,000">KSh 5,000–10,000</option>
+                  <option value="KSh 10,000–20,000">KSh 10,000–20,000</option>
+                  <option value="KSh 20,000+">KSh 20,000+</option>
+                  <option value="Let's discuss">Let's discuss</option>
+                </select>
+
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="m7 10 5 5 5-5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="needed-by">
+                When would you need it?
+              </label>
+
+              <input
+                type="date"
+                id="needed-by"
+                name="neededBy"
+              >
+
+              <small class="field-hint">
+                We'll let you know if the timing is possible.
+              </small>
+            </div>
+
+          </div>
+
+
+          <div class="form-divider"></div>
+
+
+          <div class="form-submit-area">
+
+            <p class="form-privacy">
+              Your details will only be used to respond to your enquiry.
+            </p>
+
+            <button
+              type="submit"
+              class="submit-button"
+              id="submit-button"
+            >
+              <span class="submit-button__text">Send enquiry</span>
+
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M5 12h14m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+              tabindex="-1"
+            ></p>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHAT HAPPENS NEXT
+    ========================== -->
+
+    <section class="custom-process" aria-labelledby="process-title">
+
+      <div class="custom-process__heading">
+        <p class="section-label">AFTER YOU REACH OUT</p>
+
+        <h2 id="process-title">
+          First, a conversation.
+        </h2>
+
+        <p>
+          Every idea is different. Here's how we'll approach yours.
+        </p>
+      </div>
+
+      <div class="process-steps">
+
+        <article class="process-step">
+          <span class="process-step__number">01</span>
+
+          <h3>We review your idea.</h3>
+
+          <p>
+            We'll look at what you have in mind and get back to you
+            with any questions.
+          </p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__number">02</span>
+
+          <h3>We work out the details.</h3>
+
+          <p>
+            We'll discuss feasibility, materials, pricing and timing
+            before making any commitments.
+          </p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__number">03</span>
+
+          <h3>You decide how to proceed.</h3>
+
+          <p>
+            If we're aligned and the piece is possible, we'll agree
+            on the next steps together.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="process-note">
+        <p>
+          An enquiry is just the beginning. No payment is required
+          until the details have been discussed and agreed.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="site-footer" id="contact">
+
+    <div class="footer-main">
+      <a href="index.html" class="footer-brand" aria-label="ROHENI home">
+        <img src="images/logos/Logo.png" alt="ROHENI">
+      </a>
+
+      <p class="footer-note">
+        Considered pieces.<br>
+        Made to become your own.
+      </p>
+
+      <div class="footer-links">
+        <a href="index.html#collection">Collections</a>
+        <a href="about.html">About ROHENI</a>
+        <a href="customs.html" aria-current="page">Custom Pieces</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="current-year"></span> ROHENI</span>
+      <span>ROOTED IN NAIROBI</span>
+      <a href="index.html">BACK TO HOME ↑</a>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll progress indicator -->
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div
+      class="scroll-progress__fill"
+      id="scroll-progress-fill"
+    ></div>
+  </div>
+
+</body>
+</html>

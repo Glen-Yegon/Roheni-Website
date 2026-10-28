@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact & Help | ROHENI</title>
+  <meta
+    name="description"
+    content="Get in touch with ROHENI for assistance with orders, products and customer enquiries."
+  >
+  <meta name="theme-color" content="#FEFEFE">
+
+  <!-- Google Fonts: ROHENI branding -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Modak&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Contact page styles -->
+  <link rel="stylesheet" href="styles/contact.css">
+
+  <!-- Contact page scripts -->
+  <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+
+    
+    <!-- ROHENI — Vertical Scroll Progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div
+    class="scroll-progress__fill"
+    id="scroll-progress-fill"
+  ></div>
+</div>
+
+
+  <!-- =========================================
+       ROHENI — CONTACT NAVIGATION
+  ========================================== -->
+
+  <header class="site-header" id="site-header">
+
+    <nav class="navbar" aria-label="Main navigation">
+
+      <!-- Left navigation -->
+      <div class="navbar__left">
+
+        <a href="index.html" class="nav-link">
+          HOME
+        </a>
+
+        <a href="index.html#about" class="nav-link">
+          ABOUT
+        </a>
+
+      </div>
+
+      <!-- Centered ROHENI logo -->
+      <a
+        href="index.html"
+        class="navbar__brand"
+        aria-label="ROHENI home"
+      >
+        <img
+          src="images/logos/Logo.png"
+          alt="ROHENI"
+          class="brand-logo"
+          width="140"
+          height="44"
+        >
+      </a>
+
+      <!-- Right navigation -->
+      <div class="navbar__right">
+
+        <a href="index.html#shop" class="nav-link">
+          SHOP
+        </a>
+
+        <!-- Cart -->
+        <a
+          href="index.html#cart"
+          class="nav-cart"
+          aria-label="Shopping cart, 0 items"
+        >
+          <svg
+            class="cart-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle
+              cx="10"
+              cy="20"
+              r="1"
+              fill="currentColor"
+            />
+            <circle
+              cx="18"
+              cy="20"
+              r="1"
+              fill="currentColor"
+            />
+          </svg>
+
+          <span class="cart-count">0</span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </nav>
+
+    <!-- Mobile navigation -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      inert
+    >
+
+      <a href="index.html" class="mobile-menu__link">
+        HOME
+      </a>
+
+      <a href="index.html#about" class="mobile-menu__link">
+        ABOUT
+      </a>
+
+      <a href="index.html#shop" class="mobile-menu__link">
+        SHOP
+      </a>
+
+      <a href="index.html#cart" class="mobile-menu__link">
+        CART (0)
+      </a>
+
+    </div>
+
+  </header>
+
+<!-- =========================================
+     ROHENI — CONTACT & ENQUIRIES
+========================================== -->
+
+<main class="contact-page">
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+
+    <!-- Section introduction -->
+    <div class="contact-intro">
+
+      <p class="contact-eyebrow">
+        ROHENI / CUSTOMER CARE
+      </p>
+
+      <h1 class="contact-title" id="contact-title">
+        Let's talk
+      </h1>
+
+      <p class="contact-description">
+        Questions about your order, our pieces or anything else?
+        We'd love to hear from you.
+      </p>
+
+      <!-- Direct contact information -->
+      <div class="contact-details">
+
+        <div class="contact-detail">
+
+          <span class="contact-detail__label">
+            EMAIL
+          </span>
+
+          <a
+            href="mailto:rohenioriginals@gmail.com"
+            class="contact-email"
+          >
+            rohenioriginals@gmail.com
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+        <div class="contact-detail">
+
+          <span class="contact-detail__label">
+            FOLLOW OUR JOURNEY
+          </span>
+
+          <a
+            href="https://www.instagram.com/rohenistudio/"
+            class="contact-social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Subtle closing statement -->
+      <p class="contact-note">
+        For order enquiries, include your order number
+        so we can assist you more efficiently.
+      </p>
+
+    </div>
+
+
+    <!-- Contact form -->
+    <div class="contact-form-wrapper">
+
+      <div class="contact-form-header">
+
+        <p class="contact-form-eyebrow">
+          SEND US A MESSAGE
+        </p>
+
+        <p class="contact-form-description">
+          Fill in the details below and tell us how we can help.
+        </p>
+
+      </div>
+
+
+      <form class="contact-form" id="contact-form">
+
+        <!-- Name -->
+        <div class="contact-field">
+
+          <label for="contact-name">
+            YOUR NAME
+          </label>
+
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="contact-field">
+
+          <label for="contact-email">
+            EMAIL ADDRESS
+          </label>
+
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <!-- Enquiry type -->
+        <div class="contact-field">
+
+          <label for="contact-subject">
+            WHAT CAN WE HELP WITH?
+          </label>
+
+          <select
+            id="contact-subject"
+            name="subject"
+            required
+          >
+            <option value="" disabled selected>
+              Select an enquiry
+            </option>
+
+            <option value="Order enquiry">
+              Order enquiry
+            </option>
+
+            <option value="Delivery">
+              Delivery & shipping
+            </option>
+
+            <option value="Returns">
+              Returns & exchanges
+            </option>
+
+            <option value="Product and sizing">
+              Product, fit & sizing
+            </option>
+
+            <option value="General enquiry">
+              Something else
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Order number -->
+        <div class="contact-field">
+
+          <label for="contact-order">
+            ORDER NUMBER
+            <span class="contact-optional">(OPTIONAL)</span>
+          </label>
+
+          <input
+            type="text"
+            id="contact-order"
+            name="orderNumber"
+            placeholder="e.g. RH-00125"
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <!-- Message -->
+        <div class="contact-field contact-field--message">
+
+          <label for="contact-message">
+            YOUR MESSAGE
+          </label>
+
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Tell us a little more..."
+            rows="4"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <!-- Submit button: connect functionality later -->
+        <button
+          class="contact-submit"
+          type="button"
+          id="contact-submit"
+        >
+          <span>SEND MESSAGE</span>
+
+          <span class="contact-submit__arrow" aria-hidden="true">
+            ↗
+          </span>
+        </button>
+
+        <p class="contact-form-footnote">
+          Prefer email? Write to us at
+          <a href="mailto:rohenioriginals@gmail.com">
+            rohenioriginals@gmail.com
+          </a>.
+        </p>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  
+<!-- =========================================
+     ROHENI — FREQUENTLY ASKED QUESTIONS
+========================================= -->
+
+<section class="faq-section" id="faq" aria-labelledby="faq-title">
+
+  <div class="faq-intro">
+    <p class="faq-eyebrow">THE ESSENTIALS</p>
+
+    <h2 class="faq-title" id="faq-title">
+      A few things, answered.
+    </h2>
+
+    <p class="faq-description">
+      The details that make your ROHENI experience a little easier.
+    </p>
+  </div>
+
+  <div class="faq-content">
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How can I place an order?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Explore our collection, select the piece you love, choose the
+            available options and follow the checkout process to complete
+            your order. If you need help placing an order, get in touch
+            with our team.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>Where do you deliver, and how long does it take?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Delivery availability and estimated timelines can vary by
+            destination. Please contact us with your location and we’ll
+            help you confirm the available delivery options.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How can I track my order?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            If you need an update on your order, email us with your order
+            number and we’ll help you check its status.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>Can I return or exchange an item?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Return and exchange eligibility depends on ROHENI’s current
+            policy. Please contact us before sending an item back so we
+            can guide you through the applicable process.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How do I find the right size?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Check the sizing information provided on the product page
+            before ordering. If you’re unsure about the fit, reach out
+            with the piece you’re interested in and we’ll do our best
+            to help.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How should I care for my ROHENI pieces?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Follow the care label on your garment, as instructions may
+            differ between fabrics and finishes. When in doubt, use
+            the care guidance provided with the specific piece.
+          </p>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="faq-contact">
+      <p>Still have a question?</p>
+      <a href="#contact" class="faq-contact-link">
+        GET IN TOUCH
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     ROHENI — MINIMAL FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <!-- Email signup -->
+    <div class="footer-newsletter">
+      <h2 class="footer-heading">Stay in the know.</h2>
+
+      <p class="footer-description">
+        New collections, updates and more. Straight to your inbox.
+      </p>
+
+      <form class="footer-signup" id="footer-signup">
+        <label class="visually-hidden" for="footer-email">
+          Email address
+        </label>
+
+        <input
+          type="email"
+          id="footer-email"
+          name="email"
+          placeholder="Your email address"
+          autocomplete="email"
+          required
+        />
+
+        <button type="submit" aria-label="Subscribe to newsletter">
+          <span>SUBSCRIBE</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </form>
+
+      <p class="footer-signup-note" id="footer-signup-note">
+        By subscribing, you agree to our Privacy Policy.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-navigation">
+
+      <div class="footer-link-group">
+        <h3 class="footer-label">EXPLORE</h3>
+
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-link-group">
+        <h3 class="footer-label">FOLLOW</h3>
+
+        <a
+          href="https://www.instagram.com/rohenistudio?xtok=MW84dWE2eGE4YTZhdg=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@roheniatelier?_r=1&_t=ZS-9AjvC8UdjHw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TikTok ↗
+        </a>
+
+        <a href="mailto:rohenioriginals@gmail.com">
+          Email ↗
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom details -->
+  <div class="footer-bottom">
+    <p>© <span id="footer-year">2026</span> ROHENI</p>
+
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <!-- Oversized logo -->
+  <a
+    href="index.html"
+    class="footer-logo"
+    aria-label="ROHENI home"
+  >
+    <img
+      src="images/logos/Logo.png"
+      alt="ROHENI"
+      loading="lazy"
+    />
+  </a>
+
+</footer>
+
+
+</main>
+
+
+</body>
+</html>

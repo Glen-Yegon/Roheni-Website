@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#fefefe">
+  <meta
+    name="description"
+    content="Discover ROHENI — expressive fashion rooted in Nairobi."
+  >
+
+  <title>ROHENI First Collection</title>
+
+  <!-- Google Fonts: Syne + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Modak&display=swap"
+  rel="stylesheet"
+>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/lenis@1.3.26/dist/lenis.css"
+/>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Main script -->
+  <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ROHENI — Vertical Scroll Progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div
+    class="scroll-progress__fill"
+    id="scroll-progress-fill"
+  ></div>
+</div>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="site-header" id="site-header">
+
+    <nav class="navbar" aria-label="Main navigation">
+
+      <!-- Left navigation -->
+      <div class="nav-group nav-left">
+        <a href="#collection" class="nav-link">Collections</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+
+      <!-- Centered logo -->
+      <a href="#" class="brand" aria-label="ROHENI home">
+        <img
+          src="images/logos/Logo.png"
+          alt="ROHENI"
+          class="brand-logo"
+        >
+      </a>
+
+      <!-- Right navigation -->
+      <div class="nav-group nav-right">
+        <a href="#bring-it-back" class="nav-link">Bring It Back</a>
+        <a href="#custom-pieces" class="nav-link">Custom Pieces</a>
+
+        <a href="#cart" class="cart-link" aria-label="Shopping cart">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 4H5L7.2 14.1C7.4 15 8.2 15.6 9.1 15.6H17.3C18.2 15.6 19 15 19.2 14.1L21 7H6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="9.5" cy="19.5" r="1" fill="currentColor"/>
+            <circle cx="17" cy="19.5" r="1" fill="currentColor"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-count" aria-label="0 items">0</span>
+        </a>
+      </div>
+
+<!-- Mobile menu toggle -->
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Full-screen mobile navigation -->
+<div class="mobile-menu" id="mobile-menu" inert aria-hidden="true">
+
+  <!-- Top bar -->
+  <div class="mobile-menu__top">
+
+    <a href="index.html" class="mobile-menu__brand" aria-label="ROHENI home">
+      <img src="images/logos/Logo.png" alt="ROHENI">
+    </a>
+
+    <button
+      class="mobile-menu__close"
+      id="mobile-menu-close"
+      type="button"
+      aria-label="Close navigation menu"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Navigation links -->
+  <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+
+    <a href="#about" class="mobile-menu__link">
+      <span class="mobile-menu__number">01</span>
+      <span>About</span>
+      <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a href="#shop" class="mobile-menu__link">
+      <span class="mobile-menu__number">02</span>
+      <span>Shop</span>
+      <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a href="#collection" class="mobile-menu__link">
+      <span class="mobile-menu__number">03</span>
+      <span>Collection 001</span>
+      <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a href="#contact" class="mobile-menu__link">
+      <span class="mobile-menu__number">04</span>
+      <span>Contact</span>
+      <span class="mobile-menu__arrow" aria-hidden="true">↗</span>
+    </a>
+
+  </nav>
+
+  <!-- Bottom note -->
+  <div class="mobile-menu__footer">
+    <span>ROHENI</span>
+    <span>ROOTED IN NAIROBI</span>
+  </div>
+
+</div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+
+  <main>
+
+   
+<section class="hero" id="home" aria-label="ROHENI — Made to be felt">
+
+  <!-- Background photography -->
+  <div class="hero-background" aria-hidden="true"></div>
+
+  <!-- Editorial contrast overlay -->
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- Minimal central statement -->
+  <div class="hero-content">
+
+    <div class="hero-statement">
+
+<h1 class="hero-title scramble-title">
+  Collection 002 Available</span>
+</h1>
+    </div>
+
+    <!-- Bottom shopping CTA -->
+    <a href="#collection" class="hero-button">
+      <span>SHOP NOW</span>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ROHENI — OVERSIZED LOGO
+========================== -->
+
+<section class="brand-statement" aria-label="ROHENI brand">
+
+  <div class="brand-statement-inner">
+    <img
+      src="images/logos/Logo.png"
+      alt="ROHENI"
+      class="brand-statement-logo"
+      loading="lazy"
+    >
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ROHENI — BRAND INTRODUCTION
+========================== -->
+<section class="brand-intro" id="brand-intro" aria-label="About ROHENI">
+
+  <!-- Desktop background -->
+  <div class="brand-intro-image brand-intro-image-desktop" aria-hidden="true"></div>
+
+  <!-- Mobile background -->
+  <div class="brand-intro-image brand-intro-image-mobile" aria-hidden="true"></div>
+
+  <!-- Dark overlay -->
+  <div class="brand-intro-overlay" aria-hidden="true"></div>
+
+  <div class="brand-intro-content">
+
+    <!-- Top left -->
+    <div class="brand-intro-top">
+      <span class="brand-intro-index">01 / THE BRAND</span>
+      <span class="brand-intro-top-note">AN EXPRESSION OF IDENTITY</span>
+    </div>
+
+    <!-- Upper right -->
+    <div class="brand-intro-side">
+      <p>
+        Clothing is personal.
+        <span>Style makes it yours.</span>
+      </p>
+    </div>
+
+    <!-- Bottom left -->
+    <div class="brand-intro-main">
+      <span class="brand-intro-eyebrow">INTRODUCING ROHENI</span>
+
+      <h2>
+        Made with intention.
+        <span>Worn with meaning.</span>
+      </h2>
+
+      <p class="brand-intro-description">
+        ROHENI is a contemporary clothing brand exploring personal
+        expression through considered design and everyday wear.
+        Pieces created to feel individual, effortless and distinctly yours.
+      </p>
+    </div>
+
+    <!-- Bottom right -->
+    <div class="brand-intro-action">
+      <a href="about.html" class="brand-intro-button">
+        <span>DISCOVER OUR STORY</span>
+        <span class="brand-intro-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+     ROHENI — COLLECTION 002
+=========================================== -->
+<section class="collection-section" id="collection">
+
+  <div class="collection-container">
+
+    <!-- Section heading -->
+    <div class="collection-heading">
+      <div class="collection-heading-main">
+        <div class="collection-title-wrap">
+          <h2 class="collection-title">
+            Explore the first
+            <span>collection</span>
+          </h2>
+        </div>
+
+        <p class="collection-intro">
+          Considered pieces.
+          <span>Made to be worn your way.</span>
+        </p>
+      </div>
+
+      <div class="collection-heading-bottom">
+        <span>COLLECTION 001</span>
+        <span class="collection-heading-note">
+          A STUDY IN PERSONAL STYLE
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- Product grid -->
+    <div class="collection-grid">
+
+      <!-- PRODUCT 01 — ADOWA SET -->
+      <a
+        href="product.html?id=adowa-set"
+        class="collection-card"
+        aria-label="Discover the Adowa Set"
+      >
+        <div class="collection-card-image">
+
+          <img
+            src="images/adowa/Adwoa Set - Bobo - Front(1).JPG"
+            alt="ROHENI Adowa Set"
+            loading="lazy"
+          >
+
+        </div>
+
+        <div class="collection-card-info">
+          <div class="collection-card-name-wrap">
+            <h3>Adowa Set</h3>
+          </div>
+
+          <span class="collection-card-discover">
+            DISCOVER PIECE <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+
+      <!-- PRODUCT 02 — KALEIDOSCOPE JACKET -->
+      <a
+        href="product.html?id=kaleidoscope-jacket"
+        class="collection-card"
+        aria-label="Discover the Kaleidoscope Jacket"
+      >
+        <div class="collection-card-image">
+
+          <img
+            src="images/kaleidoscope/Ciku coat front 3.JPG"
+            alt="ROHENI Kaleidoscope Jacket"
+            loading="lazy"
+          >
+
+        </div>
+
+        <div class="collection-card-info">
+          <div class="collection-card-name-wrap">
+            <h3>Kaleidoscope Jacket</h3>
+          </div>
+
+          <span class="collection-card-discover">
+            DISCOVER PIECE <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+
+      <!-- PRODUCT 03 — STATEMENT T SHIRT -->
+      <a
+        href="product.html?id=statement-t-shirt"
+        class="collection-card"
+        aria-label="Discover the Statement T Shirt"
+      >
+        <div class="collection-card-image">
+
+          <img
+            src="images/tshirts/Statement tee - Ciku ( WOMEN) -  Back 2.JPG"
+            alt="ROHENI Statement T Shirt"
+            loading="lazy"
+          >
+
+
+
+        </div>
+
+        <div class="collection-card-info">
+          <div class="collection-card-name-wrap">
+            <h3>Statement T Shirt</h3>
+          </div>
+
+          <span class="collection-card-discover">
+            DISCOVER PIECE <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+
+      <!-- PRODUCT 04 — THE HERD JACKETS -->
+      <a
+        href="product.html?id=the-herd-jackets"
+        class="collection-card"
+        aria-label="Discover The Herd Jackets"
+      >
+        <div class="collection-card-image">
+
+          <img
+            src="images/herd/Herd Jacket - Black (Mutsze) Front 3(1).JPG"
+            alt="ROHENI The Herd Jackets"
+            loading="lazy"
+          >
+
+        </div>
+
+        <div class="collection-card-info">
+          <div class="collection-card-name-wrap">
+            <h3>The Herd Jackets</h3>
+          </div>
+
+          <span class="collection-card-discover">
+            DISCOVER PIECE <span>↗</span>
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+
+    <!-- Collection footer -->
+    <div class="collection-footer">
+
+      <p>
+        Four pieces. One expression.
+      </p>
+
+      <a href="collection001.html" class="collection-all-link">
+        <span>EXPLORE THE COLLECTION</span>
+
+        <span class="collection-all-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M12 5L19 12L12 19"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     ROHENI — COLLECTION 002 CAMPAIGN
+========================================= -->
+
+<section class="new-collection" id="new-collection">
+
+  <!-- Campaign imagery -->
+  <picture class="new-collection__picture">
+    <source
+      media="(max-width: 768px)"
+      srcset="images/Tshirt on Gs face.JPG"
+    />
+
+    <img
+      class="new-collection__image"
+      src="images/jacket ya topaz 6.JPG"
+      alt="ROHENI Collection 002 campaign"
+      fetchpriority="high"
+    />
+  </picture>
+
+  <!-- Contrast overlay -->
+  <div class="new-collection__overlay"></div>
+
+  <!-- Collection content -->
+  <div class="new-collection__content">
+
+    <h2 class="new-collection__title">
+      Collection <span>002</span>
+    </h2>
+
+    <p class="new-collection__description">
+      A considered expression of personal style.
+      Made to stand apart.
+    </p>
+
+    <a
+      href="shop.html"
+      class="new-collection__button"
+      aria-label="Shop ROHENI Collection 002"
+    >
+      <span>SHOP NOW</span>
+      <span class="new-collection__arrow" aria-hidden="true">
+        ↗
+      </span>
+    </a>
+
+  </div>
+
+
+</section>
+
+
+<!-- =========================================
+     ROHENI — MINIMAL FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <!-- Email signup -->
+    <div class="footer-newsletter">
+      <h2 class="footer-heading">Stay in the know.</h2>
+
+      <p class="footer-description">
+        New collections, updates and more. Straight to your inbox.
+      </p>
+
+      <form class="footer-signup" id="footer-signup">
+        <label class="visually-hidden" for="footer-email">
+          Email address
+        </label>
+
+        <input
+          type="email"
+          id="footer-email"
+          name="email"
+          placeholder="Your email address"
+          autocomplete="email"
+          required
+        />
+
+        <button type="submit" aria-label="Subscribe to newsletter">
+          <span>SUBSCRIBE</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </form>
+
+      <p class="footer-signup-note" id="footer-signup-note">
+        By subscribing, you agree to our Privacy Policy.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-navigation">
+
+      <div class="footer-link-group">
+        <h3 class="footer-label">EXPLORE</h3>
+
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-link-group">
+        <h3 class="footer-label">FOLLOW</h3>
+
+        <a
+          href="https://www.instagram.com/rohenistudio?xtok=MW84dWE2eGE4YTZhdg=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@roheniatelier?_r=1&_t=ZS-9AjvC8UdjHw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TikTok ↗
+        </a>
+
+        <a href="mailto:rohenioriginals@gmail.com">
+          Email ↗
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom details -->
+  <div class="footer-bottom">
+    <p>© <span id="footer-year">2026</span> ROHENI</p>
+
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <!-- Oversized logo -->
+  <a
+    href="index.html"
+    class="footer-logo"
+    aria-label="ROHENI home"
+  >
+    <img
+      src="images/logos/Logo.png"
+      alt="ROHENI"
+      loading="lazy"
+    />
+  </a>
+
+</footer>
+
+
+
+
+  </main>
+
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({
+    autoRaf: true,
+    lerp: 0.09,
+    anchors: true,
+    smoothWheel: true
+  });
+</script>
+
+<script>
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+</script>
+
+</body>
+</html>
