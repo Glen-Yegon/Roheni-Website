@@ -12,13 +12,13 @@
 
 :root {
   --color-white: #FEFEFE;
-  --color-text: #2E2E2E;
+  --color-text: black;
   --color-muted: #777777;
   --color-black: #171717;
   --color-border: rgba(46, 46, 46, 0.15);
 
   --font-body: "Manrope", sans-serif;
-  --font-heading: "Modak", cursive;
+  --font-heading: 'Cinzel Decorative', serif;
 
   --header-height: 86px;
 

@@ -16,7 +16,7 @@
   --color-glass: rgba(18, 18, 18, 0.82);
   --color-glass-border: rgba(255, 255, 255, 0.12);
 
-  --font-heading: "Modak", cursive;
+  --font-heading: 'Cinzel Decorative', serif;
   --font-body: "Manrope", sans-serif;
 
   --header-height: 82px;
@@ -686,7 +686,7 @@ html {
 
 .roheni-collection__title {
   margin: 0;
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(52px, 8.8vw, 132px);
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -710,7 +710,7 @@ html {
 
 .roheni-collection__intro-mark {
   flex: 0 0 auto;
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: 25px;
   line-height: 1;
 }
@@ -829,7 +829,7 @@ html {
   left: -0.035em;
 
   color: rgba(254, 254, 254, 0.9);
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(100px, 15vw, 220px);
   line-height: 1;
   letter-spacing: -0.08em;
@@ -899,7 +899,7 @@ html {
 .roheni-story__title {
   margin: clamp(28px, 4vw, 50px) 0 23px;
 
-  font-family: "Manrope", sans-serif;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(32px, 4.2vw, 60px);
   font-weight: 500;
   letter-spacing: -0.075em;
@@ -1072,7 +1072,7 @@ html {
   z-index: 1;
   margin: clamp(42px, 7vw, 95px) 0 0;
 
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(48px, 9vw, 130px);
   font-weight: 400;
   letter-spacing: -0.045em;
@@ -1117,7 +1117,7 @@ html {
   bottom: -0.35em;
 
   color: #F4F3F0;
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(220px, 37vw, 550px);
   line-height: 1;
   letter-spacing: -0.1em;
@@ -1498,7 +1498,7 @@ html {
 .bring-back__title {
   margin: auto 0;
   padding: 48px 0;
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(76px, 9.2vw, 150px);
   font-weight: 400;
   line-height: 0.86;
@@ -1800,7 +1800,7 @@ body.bring-back-modal-open {
 
 .bring-back-modal__header h2 {
   margin: 0;
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(42px, 7vw, 62px);
   font-weight: 400;
   line-height: 1;

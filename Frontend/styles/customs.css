@@ -11,13 +11,13 @@
 
 :root {
   --custom-bg: #FEFEFE;
-  --custom-text: #2E2E2E;
+  --custom-text: black;
   --custom-muted: #777777;
   --custom-border: #E4E4E1;
   --custom-soft: #F5F5F2;
   --custom-accent: #7A0000;
 
-  --font-heading: "Modak", cursive;
+  --font-heading: "Cinzel Decorative", serif;
   --font-body: "Manrope", sans-serif;
 
   --header-height: 86px;
