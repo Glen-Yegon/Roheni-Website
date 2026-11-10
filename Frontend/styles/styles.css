@@ -15,7 +15,7 @@
   --color-grey: #777777;
   --color-border: rgba(255, 255, 255, 0.24);
 
---font-heading: "Modak", cursive;
+--font-heading: 'Cinzel Decorative', serif;
 --font-body: "Manrope", sans-serif;
 
 
@@ -1256,7 +1256,6 @@ body.menu-open {
   color: var(--color-white);
   background: #252525;
 }
-
 .hero-background {
   position: fixed;
   z-index: -3;
@@ -1269,44 +1268,75 @@ body.menu-open {
 
   transform: scale(1.12);
   animation: heroZoomOut 0.4s linear 2s forwards;
-
+  filter: brightness(0.92) contrast(1.1) saturate(0.9);
   will-change: transform;
 }
 
-.hero-background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.24);
-  pointer-events: none;
-}
-
-@keyframes heroZoomOut {
-  from {
-    transform: scale(1.12);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-/* Cinematic contrast */
+/* =========================================================
+   CINEMATIC FILM OVERLAY
+========================================================= */
 
 .hero-overlay {
   position: absolute;
-  z-index: -2;
   inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
 
   background:
+    /* vignette: softer edges, open center */
+    radial-gradient(
+      ellipse 120% 90% at 50% 45%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.32) 55%,
+      rgba(0, 0, 0, 0.78) 100%
+    ),
+    /* letterbox-style top/bottom weight */
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.20) 0%,
-      rgba(0, 0, 0, 0.02) 35%,
-      rgba(0, 0, 0, 0.06) 55%,
-      rgba(0, 0, 0, 0.42) 100%
-    );
+      rgba(0, 0, 0, 0.50) 0%,
+      rgba(0, 0, 0, 0.14) 35%,
+      rgba(0, 0, 0, 0.22) 60%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    /* flat cool base tint */
+    linear-gradient(rgba(6, 10, 18, 0.18), rgba(6, 10, 18, 0.18));
+}
+
+/* Cinematic color grade: cool shadows, warm corner bleed */
+.hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(10, 45, 70, 0.40) 0%, rgba(0, 0, 0, 0) 55%),
+    linear-gradient(315deg, rgba(90, 35, 15, 0.32) 0%, rgba(0, 0, 0, 0) 50%);
+  mix-blend-mode: soft-light;
+}
+
+/* Monochrome film grain */
+.hero-overlay::after {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 240px 240px;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+  animation: grain 0.9s steps(6) infinite;
+}
+
+@keyframes grain {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-3%, 2%); }
+  40%  { transform: translate(2%, -3%); }
+  60%  { transform: translate(-2%, -1%); }
+  80%  { transform: translate(3%, 3%); }
+  100% { transform: translate(0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-overlay::after { animation: none; }
 }
 
 /* Full-screen content layer */
@@ -1420,7 +1450,7 @@ body.menu-open {
   border-bottom: 1px solid var(--color-white);
   color: white;
 
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-size: 17px;
   font-weight: 800;
   letter-spacing: 0.09em;
@@ -1670,9 +1700,8 @@ body.menu-open {
 }
 
 
-
 /* =========================================================
-   ROHENI — MINIMAL LEFT-ALIGNED HERO
+   ROHENI — MINIMAL CENTERED HERO
 ========================================================= */
 
 .hero-content {
@@ -1682,14 +1711,14 @@ body.menu-open {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   width: 100%;
   min-height: 100%;
-  padding: 0 clamp(28px, 8.3vw, 120px);
+padding: 0 clamp(40px, 11vw, 170px);
 
-  text-align: left;
+  text-align: center;
   pointer-events: none;
 }
 
@@ -1704,7 +1733,7 @@ body.menu-open {
   max-width: 650px;
   margin: 0;
 
-  text-align: left;
+  text-align: center;
   transform: none;
   animation: none !important;
 }
@@ -1715,13 +1744,13 @@ body.menu-open {
   width: 100%;
   margin: 0;
 
-  font-family: "Yeseva One", serif;
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(30px, 3.5vw, 46px);
-  font-weight: 800;
+  font-weight: 100;
   line-height: 1.2;
   letter-spacing: 0;
 
-  text-align: left;
+  text-align: center;
   text-transform: none;
   text-wrap: balance;
 
@@ -1729,8 +1758,8 @@ body.menu-open {
   animation: none !important;
 }
 
-
 /* Shop Now button */
+
 .hero-button {
   position: relative !important;
   inset: auto !important;
@@ -1741,20 +1770,19 @@ body.menu-open {
 
   width: fit-content;
   min-height: 54px;
-  margin: 26px 0 0 !important;
-  padding: 0 0 10px !important;
+  margin: 34px 0 0 !important;
+  padding: 0 0 14px 0.3em !important;
 
   border: 0;
-  border-bottom: 1.5px solid white;
   border-radius: 0;
-
   background: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
 
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
 
@@ -1765,14 +1793,50 @@ body.menu-open {
   pointer-events: auto;
   cursor: pointer;
 
-  transition: color 0.3s ease, border-color 0.3s ease;
+  transition:
+    letter-spacing 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.4s ease;
 }
 
-.hero-button:hover {
-  background: transparent;
-  color: #fff;
-  border-bottom-color: #fff;
+/* Dim hairline: the track */
+.hero-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.28);
 }
+
+/* Bright line: a short bar at rest, sweeps out from the center on hover */
+.hero-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 22%;
+  height: 1px;
+  background: #fff;
+  transform: translateX(-50%);
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus-visible {
+  color: #fff;
+  letter-spacing: 0.44em;
+}
+
+.hero-button:hover::after,
+.hero-button:focus-visible::after {
+  width: 100%;
+}
+
+.hero-button:focus-visible {
+  outline: none;
+}
+
 
 /* Tablet and mobile */
 
@@ -1919,7 +1983,7 @@ body.menu-open {
 }
 
 .brand-intro-image-desktop {
-  background-image: url("../images/kaleidoscope/hero1.JPG");
+  background-image: url("../images/herd/Herd\ Jacket\ -\ Brown\ \(Topaz\)\ front.JPG");
   display: block;
 }
 
@@ -2008,7 +2072,7 @@ body.menu-open {
 
 .brand-intro-side p span {
   display: block;
-  font-family: var(--font-heading, "Modak", cursive);
+  font-family: var(--font-heading, 'Cinzel Decorative', serif);
   font-weight: 400;
   font-size: clamp(19px, 2vw, 29px);
   line-height: 1.3;
@@ -2033,7 +2097,7 @@ body.menu-open {
 .brand-intro-main h2 {
   margin: 0;
   max-width: 760px;
-  font-family: var(--font-heading, "Modak", cursive);
+  font-family: var(--font-heading, 'Cinzel Decorative', serif);
   font-size: clamp(42px, 6.1vw, 88px);
   font-weight: 400;
   line-height: 0.99;
@@ -2352,7 +2416,6 @@ body.menu-open {
   margin-inline: auto;
 }
 
-
 /* =====================================================
    SECTION HEADER
 ===================================================== */
@@ -2391,7 +2454,7 @@ body.menu-open {
 
 .collection-heading-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.36fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: end;
   gap: 36px;
 
@@ -2401,50 +2464,44 @@ body.menu-open {
 
 .collection-title-wrap {
   min-width: 0;
+  text-align: center;
 }
 
 .collection-title {
+  position: relative;
   margin: 0;
-
-  font-family: var(--font-heading, "Modak", cursive);
+  padding-bottom: 0.28em;   /* space between the text and the line */
+  font-family: 'Cinzel Decorative', serif;
   font-size: clamp(48px, 7.3vw, 108px);
-  font-weight: 400;
+  font-weight: 100;
   line-height: 0.99;
   letter-spacing: -0.035em;
 
+  text-align: center;
   overflow-wrap: normal;
   text-wrap: balance;
 }
 
+/* Line under the title: 40% of the title width, exactly centered */
+.collection-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40%;
+  height: 1px;
+  background: var(--collection-line, rgb(0, 0, 0));
+  transform: translateX(-50%);
+}
+
 .collection-title > span {
-  display: block;
-}
-
-.collection-period {
-  color: #8e8e8e;
-}
-
-.collection-intro {
-  max-width: 260px;
-  margin: 0 0 8px auto;
-
-  font-family: var(--font-body, "Manrope", sans-serif);
-  font-size: clamp(13px, 1.1vw, 15px);
-  font-weight: 500;
-  line-height: 1.8;
-  letter-spacing: -0.015em;
-}
-
-.collection-intro span {
-  display: block;
-  color: var(--collection-muted);
+  display: inline;
 }
 
 .collection-heading-bottom {
   padding-top: 16px;
   border-top: 1px solid var(--collection-line);
 }
-
 
 /* =====================================================
    PRODUCT GRID
@@ -3160,7 +3217,7 @@ background:
 .new-collection__title {
   margin: 0;
 
-  font-family: var(--font-heading, "Modak", cursive);
+  font-family: var(--font-heading, 'Cinzel Decorative', serif);
   font-size: clamp(58px, 7.1vw, 112px);
   font-weight: 400;
   line-height: 0.98;
