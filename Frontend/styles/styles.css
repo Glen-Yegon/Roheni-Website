@@ -507,7 +507,7 @@ img {
   /* Swap in the mobile photograph */
 
   .hero-background {
-    background-image: url("../images/hero1.JPG");
+    background-image: url("../images/hero1\ \(1\).webp");
     background-position: center center;
 
     transform: scale(1.15);
@@ -1261,7 +1261,7 @@ body.menu-open {
   z-index: -3;
   inset: 0;
 
-  background-image: url("../images/kaleidoscope/hero1.JPG");
+  background-image: url("../images/hero1\ \(2\).webp");
   background-size: cover;
   background-position: center 42%;
   background-repeat: no-repeat;
@@ -1537,7 +1537,7 @@ body.menu-open {
 
 @media (max-width: 760px) {
   .hero-background {
-    background-image: url("../images/herd/Herd\ Jacket\ -\ Brown\ \(Anto\)\ Front\ 2.JPG");
+    background-image: url("../images/Herd\ Jacket\ -\ Brown\ \(Anto\)\ Front\ 2.webp");
     background-position: center center;
   }
 
@@ -1983,12 +1983,12 @@ padding: 0 clamp(40px, 11vw, 170px);
 }
 
 .brand-intro-image-desktop {
-  background-image: url("../images/herd/Herd\ Jacket\ -\ Brown\ \(Topaz\)\ front.JPG");
+  background-image: url("../images/Herd\ Jacket\ -\ Brown\ \(Topaz\)\ front.webp");
   display: block;
 }
 
 .brand-intro-image-mobile {
-  background-image: url("../images/hero1.JPG");
+  background-image: url("../images/hero1\ \(1\).webp");
   display: none;
 }
 
